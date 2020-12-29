@@ -33,11 +33,14 @@ const userData = username => {
   });
 };
 
-const Header = async username => {
+const Header = async (username, theme = false) => {
   const json = await userData(username);
-  
-  const element = `<div style="${styled.container}"><h3 style="${styled.h3}"><a href="${json.html_url}" target="_blank" rel="noopener nofollow" style="${styled.a}">@${username} <em>on</em> GitHub</a></h3>
-  <div style="${styled.div}"><b>${json.public_repos}</b>&nbsp;Public Repos&nbsp;|&nbsp;<b>${json.public_gists}</b>&nbsp;Public Gists</div></div>`;
+  let element = `<div><h3><a href="${json.html_url}" target="_blank" rel="noopener nofollow">@${username} <em>on</em> GitHub</a></h3><div><b>${json.public_repos}</b>&nbsp;Public Repos&nbsp;|&nbsp;<b>${json.public_gists}</b>&nbsp;Public Gists</div>`;
+
+  if (theme) {
+    element = `<div style="${styled.container}"><h3 style="${styled.h3}"><a href="${json.html_url}" target="_blank" rel="noopener nofollow" style="${styled.a}">@${username} <em>on</em> GitHub</a></h3>
+    <div style="${styled.div}"><b>${json.public_repos}</b>&nbsp;Public Repos&nbsp;|&nbsp;<b>${json.public_gists}</b>&nbsp;Public Gists</div></div>`;
+  }
 
   return element;
 };
