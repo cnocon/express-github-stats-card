@@ -103,7 +103,7 @@ const Card = async (username, theme = false) => {
     }, 0);
 
     const style = `<style>
-      #github-stats-card {max-width: 340px; padding: 0; background-color: #fff; box-sizing: border-box; font-family: Arial, sans-serif;  display: flex; border: 1px solid #efefef; width: 350px; min-height: 300px; flex-direction: column;}
+      #github-stats-card {max-width: 450px; padding: 0; background-color: #fff; box-sizing: border-box; font-family: Arial, sans-serif;  display: flex; border: 1px solid #efefef; flex-direction: column;}
       
       #github-stats-card header h3 {display: flex; justify-content: center; align-items: center;}
       #github-stats-card header h3 img,
@@ -119,11 +119,11 @@ const Card = async (username, theme = false) => {
       #github-stats-card .top {width: 100%; padding-bottom: 5px;}
       #github-stats-card li ol { padding-bottom: 0; padding: 0 0 0 30px; -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;}
       
-      #github-stats-card .content {display: flex; flex-wrap: wrap; font-size: 14px; padding: 15px;}
+      #github-stats-card .content {display: flex; flex-wrap: wrap; font-size: 16px; padding: 15px;}
     </style>`;
 
     let element = `<div id="github-stats-card" class='container'><header><h3><a href="${user.html_url}" target="_blank" rel="noopener nofollow">@${username} <i>on</i> GitHub</a><img src="https://github.githubassets.com/images/icons/emoji/octocat.png?v8" alt="Octocat"/></h3><div class='subheader'><b>${user.public_repos}</b>&nbsp;Public Repos&nbsp;|&nbsp;<b>${user.public_gists}</b>&nbsp;Public Gists</div></header>
-    <div class='content'><ul class='top'><li class='header'><b>Top Languages</b>: <ol><li><b>${topLanguages[0][0]}</b>: ${topLanguages[0][1]} repo(s)</li><li><b>${topLanguages[1][0]}</b>: ${topLanguages[1][1]} repo(s)</li><li><b>${topLanguages[2][0]}</b>: ${topLanguages[2][1]} repo(s)</li></ol></li></ul><ul class='bottom'></li><li><b>Total Watchers</b>: ${watchers}</li><li><b>All Open Issues</b>: ${openIssues}</li><li><b>Stargazers</b>: ${stargazers}</li></ul></div></div>`;
+    <div class='content'><ul class='top'><li class='header'><b>Top Languages</b><ol><li><b>${topLanguages[0][0]}</b>: ${topLanguages[0][1]} repo(s)</li><li><b>${topLanguages[1][0]}</b>: ${topLanguages[1][1]} repo(s)</li><li><b>${topLanguages[2][0]}</b>: ${topLanguages[2][1]} repo(s)</li></ol></li></ul><ul class='bottom'></li><li><b>Total Watchers</b>: ${watchers}</li><li><b>All Open Issues</b>: ${openIssues}</li><li><b>Stargazers</b>: ${stargazers}</li></ul></div></div>`;
     
     if (theme) {
       element = `${style}${element}`;

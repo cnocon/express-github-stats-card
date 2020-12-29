@@ -1,4 +1,4 @@
 node_modules
 *.DS_Store
 README.html
-server.js
+*server.js
