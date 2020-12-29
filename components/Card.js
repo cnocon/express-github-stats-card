@@ -114,7 +114,7 @@ const Card = async (username, theme = false) => {
     }, 0);
 
     let element = `<div id="github-stats-card"><header><h3><a href="${user.html_url}" target="_blank" rel="noopener nofollow">@${username} <i>on</i> GitHub</a><img src="https://github.githubassets.com/images/icons/emoji/octocat.png?v8" alt="Octocat"/></h3><div class='subheader'><b>${user.public_repos}</b>&nbsp;Public Repos&nbsp;|&nbsp;<b>${user.public_gists}</b>&nbsp;Public Gists</div></header>
-    <div class='content'><p><b>Top Languages</b></p><ol class='top'><li><em>${topLanguages[1][0]}</em><small>${topLanguages[1][1]} repo(s)</small></li><li><em>${topLanguages[0][0]}</em><small>${topLanguages[0][1]} repo(s)</small></li><li><em>${topLanguages[2][0]}</em><small>${topLanguages[2][1]} repo(s)</small></li></ol><ul class='bottom'></li><li><b>Total Watchers</b>: ${watchers}</li><li><b>All Open Issues</b>: ${openIssues}</li><li><b>Stargazers</b>: ${stargazers}</li></ul></div></div>`;
+    <div class='content'><p><b>Top Languages</b></p><ol class='top'><li><em>${topLanguages[0][0]}</em><small>${topLanguages[0][1]} repo(s)</small></li><li><em>${topLanguages[1][0]}</em><small>${topLanguages[1][1]} repo(s)</small></li><li><em>${topLanguages[2][0]}</em><small>${topLanguages[2][1]} repo(s)</small></li></ol><ul class='bottom'></li><li><b>Total Watchers</b>: ${watchers}</li><li><b>All Open Issues</b>: ${openIssues}</li><li><b>Stargazers</b>: ${stargazers}</li></ul></div></div>`;
     
     if (theme) {
       element = `${styles}${element}`;

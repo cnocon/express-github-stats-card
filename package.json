@@ -1,6 +1,6 @@
 {
   "name": "@cnocon/github-stats-card",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "author": "Cristin O'Connor <her@cristin.io>",
   "description": "A stats card for GitHub metrics.",
   "private": false,
