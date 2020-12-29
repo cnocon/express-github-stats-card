@@ -2,7 +2,7 @@
 
 Pass in a GitHub username and get this:
 
-![Widget Screenshot](https://www.dropbox.com/s/0o5b6jis86kdyzg/github-stats-card-screenshot.png?dl=1)
+![Widget Screenshot](github-stats-card-screenshot.png)
 
 ## Installation
 
