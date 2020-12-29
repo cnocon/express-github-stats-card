@@ -18,6 +18,6 @@ const { Card } = require('@cnocon/github-stats-card');
 // ...
 app.get('/', async (req, res) => {
   const statsCard = await Card('cnocon', true);
-	res.send(statsCard);
+  res.send(statsCard);
 });
 ```
