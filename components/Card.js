@@ -7,8 +7,7 @@ const reposData = async (username, repo) => {
     'path': `/users/${username}/repos`,
     'headers': {
       'Accept': 'application/vnd.github.v3+json',
-      'user-agent': 'cnocon',
-      'authorization': 'token eb89d8418dab128d1502f3ea37f1fd8069062d26'
+      'user-agent': 'cnocon'
     },
   };
 
@@ -41,7 +40,6 @@ const userData = username => {
     'path': `/users/${username}`,
     'headers': {
       'Accept': 'application/vnd.github.v3+json',
-      'authorization': 'token eb89d8418dab128d1502f3ea37f1fd8069062d26',
       'user-agent': 'cnocon'
     },
   };
