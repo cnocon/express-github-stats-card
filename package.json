@@ -1,10 +1,13 @@
 {
-  "name": "github-stats-card",
-  "version": "1.0.0",
+  "name": "@cnocon/github-stats-card",
+  "version": "0.0.2",
+  "author": "Cristin O'Connor",
   "description": "A stats card for GitHub activity.",
-  "main": "app.js",
+  "main": "./index.js",
+  "private": false,
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +22,6 @@
     "User",
     "Stats"
   ],
-  "author": "Cristin O'Connor",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/cnocon/github-stats-card/issues"
   },
