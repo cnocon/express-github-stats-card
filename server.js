@@ -1,7 +1,6 @@
 const express = require('express');
 const exported = require('./components/Card');
 const { Card } = exported;
-require('dotenv').config();
 
 const app = express();
 

@@ -25,6 +25,7 @@
   "homepage": "https://github.com/cnocon/github-stats-card#readme",
   "dependencies": {},
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
   }
 }
