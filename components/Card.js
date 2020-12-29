@@ -81,7 +81,6 @@ const Card = async (username, accessToken, theme = false) => {
     getUserData(username, accessToken),
     getUserRepositories(username, accessToken)
   ]).then(payload => {
-    console.log(payload[0]);
     const user = payload[0];
     const repos = payload[1];
     const languagesObj = {};
