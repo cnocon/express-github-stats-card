@@ -1,14 +1,11 @@
 {
   "name": "@cnocon/github-stats-card",
-  "version": "0.0.5",
-  "author": "Cristin O'Connor",
-  "description": "A stats card for GitHub activity.",
-  "main": "./index.js",
+  "version": "0.0.6",
+  "author": "Cristin O'Connor <her@cristin.io>",
+  "description": "A stats card for GitHub metrics.",
   "private": false,
   "license": "MIT",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cnocon/github-stats-card.git"
@@ -25,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/cnocon/github-stats-card/issues"
   },
-  "homepage": "https://github.com/cnocon/github-stats-card#readme"
+  "homepage": "https://github.com/cnocon/github-stats-card#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

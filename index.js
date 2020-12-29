@@ -1,5 +1,5 @@
-const { Header } = require('./components/Header');
+const { Card } = require('./components/Card');
 
 module.exports = {
-  Card: Header
+  Card: Card
 }
