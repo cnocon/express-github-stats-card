@@ -112,18 +112,18 @@ const Card = async (username, theme = false) => {
       #github-stats-card header img { height: 30px; margin-left: 10px; }
       
       #github-stats-card .subheader { display: flex; justify-content: center; padding: 10px 15px; background-color: #efefef;}
-      #github-stats-card ol, ul {margin: 0; padding: 0 0 10px 10px;}
-      #github-stats-card ul { list-style: none; }
+      #github-stats-card ol, ul {display: flex; flex-direction: column; align-items: center; margin: 0; padding: 0 0 10px 10px;}
       #github-stats-card li { margin: 5px 0; }
-      #github-stats-card ul > .header > b { display: inline-block; margin-bottom: 5px; }
-      #github-stats-card .top {width: 100%; padding-bottom: 5px;}
-      #github-stats-card li ol { padding-bottom: 0; padding: 0 0 0 30px; -webkit-column-break-inside: avoid; page-break-inside: avoid; break-inside: avoid;}
+      #github-stats-card li small { display: block; }
+      #github-stats-card .top {width: 100%; padding-bottom: 10px; border-bottom: 1px solid #efefef; margin-bottom: 10px; text-align: center; flex-direction: row; justify-content: space-around;}
+      #github-stats-card .top > li {display: flex; flex-direction: column;}
+      #github-stats-card .bottom { list-style: none; }
       
-      #github-stats-card .content {display: flex; flex-wrap: wrap; font-size: 16px; padding: 15px;}
+      #github-stats-card .content {display: flex; justify-content: center; flex-wrap: wrap; font-size: 16px; padding: 15px;}
     </style>`;
 
     let element = `<div id="github-stats-card" class='container'><header><h3><a href="${user.html_url}" target="_blank" rel="noopener nofollow">@${username} <i>on</i> GitHub</a><img src="https://github.githubassets.com/images/icons/emoji/octocat.png?v8" alt="Octocat"/></h3><div class='subheader'><b>${user.public_repos}</b>&nbsp;Public Repos&nbsp;|&nbsp;<b>${user.public_gists}</b>&nbsp;Public Gists</div></header>
-    <div class='content'><ul class='top'><li class='header'><b>Top Languages</b><ol><li><b>${topLanguages[0][0]}</b>: ${topLanguages[0][1]} repo(s)</li><li><b>${topLanguages[1][0]}</b>: ${topLanguages[1][1]} repo(s)</li><li><b>${topLanguages[2][0]}</b>: ${topLanguages[2][1]} repo(s)</li></ol></li></ul><ul class='bottom'></li><li><b>Total Watchers</b>: ${watchers}</li><li><b>All Open Issues</b>: ${openIssues}</li><li><b>Stargazers</b>: ${stargazers}</li></ul></div></div>`;
+    <div class='content'><p><b>Top Languages</b></p><ol class='top'><li><em>${topLanguages[1][0]}</em><small>${topLanguages[1][1]} repo(s)</small></li><li><em>${topLanguages[0][0]}</em><small>${topLanguages[0][1]} repo(s)</small></li><li><em>${topLanguages[2][0]}</em><small>${topLanguages[2][1]} repo(s)</small></li></ol><ul class='bottom'></li><li><b>Total Watchers</b>: ${watchers}</li><li><b>All Open Issues</b>: ${openIssues}</li><li><b>Stargazers</b>: ${stargazers}</li></ul></div></div>`;
     
     if (theme) {
       element = `${style}${element}`;
