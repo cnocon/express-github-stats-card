@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/cnocon/github-stats-card/issues"
   },
-  "homepage": "https://github.com/cnocon/github-stats-card#readme"
+  "homepage": "https://github.com/cnocon/github-stats-card#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
