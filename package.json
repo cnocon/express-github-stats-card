@@ -1,6 +1,6 @@
 {
   "name": "@cnocon/github-stats-card",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Cristin O'Connor",
   "description": "A stats card for GitHub activity.",
   "main": "./index.js",
