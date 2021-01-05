@@ -1,6 +1,6 @@
 {
   "name": "express-github-stats-card",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Cristin O'Connor <her@cristin.io>",
   "description": "A stats card for GitHub metrics build for Node + Express.",
   "private": false,
@@ -12,12 +12,16 @@
   },
   "keywords": [
     "GitHub",
+    "Stats",
     "Statistics",
     "Widget",
     "Card",
-    "GitHub",
+    "GitHub API",
     "User",
-    "Stats"
+    "Stats",
+    "Express",
+    "Express Server",
+    "Node"
   ],
   "bugs": {
     "url": "https://github.com/cnocon/express-github-stats-card/issues"

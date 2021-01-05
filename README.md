@@ -1,8 +1,10 @@
 # Express GitHub Stats Card
 
-Pass in a minimum of your [GitHub access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) and a [GitHub username](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/remembering-your-github-username-or-email) and get this:
+[Demo application](https://github.com/cnocon/express-github-stats-card-demo)
 
-![Widget Screenshot](github-stats-card-screenshot.png)
+<img src="github-stats-card-screenshot.png" alt="Widget screenshot" width="320" />
+
+Pass in a minimum of your [GitHub access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) and a [GitHub username](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/remembering-your-github-username-or-email) and get this:
 
 ## Installation
 
@@ -14,7 +16,7 @@ npm install express-github-stats-card
 
 The Card function returns an HTML string you can append anywhere. The first argument is the GitHub username, the second is your GitHub access token, and the third is an optional `Boolean` for whether or not you want to style the card with the included theme. Defaults to `false`.
 
-Below is code for a `server.js` file you can use as a guide for setting up this component in your own Express application.
+Below is code for a `server.js` file you can use as a guide for setting up this component in your own Express application. You can also check out the [demo app code](https://github.com/cnocon/express-github-stats-card-demo).
 
 ```js
 // /server.js (command to run: node server.js)
