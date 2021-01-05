@@ -1,6 +1,5 @@
 const express = require('express');
-const exported = require('./components/Card');
-const { Card } = exported;
+const Card = require('./components/Card').Card;
 
 const app = express();
 
