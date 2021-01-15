@@ -1,6 +1,6 @@
 # Express GitHub Stats Card
 
-[Demo application](https://github.com/cnocon/express-github-stats-card-demo)
+[Demo application](https://express-github-stats-card-demo.netlify.app/)
 
 <img src="github-stats-card-screenshot.png" alt="Widget screenshot" width="320" />
 
