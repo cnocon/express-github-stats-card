@@ -5,7 +5,9 @@
   "description": "A stats card for GitHub metrics build for Node + Express.",
   "private": false,
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nodemon server.js --trace-warnings"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cnocon/express-github-stats-card"
@@ -27,7 +29,6 @@
     "url": "https://github.com/cnocon/express-github-stats-card/issues"
   },
   "homepage": "https://github.com/cnocon/express-github-stats-card#readme",
-  "dependencies": {},
   "devDependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1"

@@ -11,7 +11,6 @@ Pass in a minimum of your [GitHub access token](https://docs.github.com/en/free-
 ```bash
 npm install express-github-stats-card
 ```
-
 ## Example using Express:
 
 The Card function returns an HTML string you can append anywhere. The first argument is the GitHub username, the second is your GitHub access token, and the third is an optional `Boolean` for whether or not you want to style the card with the included theme. Defaults to `false`.
@@ -26,7 +25,7 @@ const Card = require('./components/Card').Card;
 const app = express();
 
 app.get('/', async (req, res) => {
-  // I used the dotenv npm package with a .env file containing GITHUB_ACCESS_TOKEN. 
+  // I used the dotenv npm package with a .env file containing GITHUB_ACCESS_TOKEN.
   // THE .env file is in my .gitignore and will not show up here
   const statsCard = await Card('cnocon', process.env.GITHUB_ACCESS_TOKEN, true);
   res.send(statsCard);
