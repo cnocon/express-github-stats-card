@@ -1,6 +1,6 @@
 require('dotenv').config();
 const { styles } = require('./CardStyles');
-const { Header, Footer, Content, ErrorMessage } = require('./partials');
+const { Header, Footer, Content, ErrorCard } = require('./partials');
 const { getUserData, getUserRepositories } = require('./utils');
 
 const Card = async (username, accessToken, theme = false) => {
@@ -11,7 +11,7 @@ const Card = async (username, accessToken, theme = false) => {
   .then(payload => {
     const [user] = payload;
     const element = `
-      <div id="github-stats-card">
+      <div class="github-stats-card">
         ${Header(user, username)}
         ${Content(payload)}
         ${Footer(user)}
@@ -21,7 +21,7 @@ const Card = async (username, accessToken, theme = false) => {
   })
   .catch(e => {
     console.error(e);
-    return theme ? `${styles}${ErrorMessage(username, e)}` : ErrorMessage(username, e);
+    return theme ? `${styles}${ErrorCard(username, e)}` : ErrorCard(username, e);
   });
 };
 

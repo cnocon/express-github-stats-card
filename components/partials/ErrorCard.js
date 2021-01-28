@@ -1,14 +1,13 @@
-const ErrorMessage = (username, e) => (
-  `<div id="github-stats-card" class="error">
+const ErrorCard = (username, e) => (
+  `<div class="github-stats-card error">
     <header>
       <h3>
         <a href='https://github.com/${username}'>@${username}</a>&nbsp;on GitHub
         <img src="https://github.githubassets.com/images/icons/emoji/octocat.png?v8" alt="Octocat"/>
       </h3>
-      <h5>GitHub Stat Card Failed to Load</h5>
+      <h5><b>GitHub Stat Card Failed to Load</b></h5>
     </header>
     <div>
-
       <ul>
         <li>${e.msg}</li>
       </ul>
@@ -19,5 +18,5 @@ const ErrorMessage = (username, e) => (
 )
 
 module.exports = {
-  ErrorMessage
+  ErrorCard
 }

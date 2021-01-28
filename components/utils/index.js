@@ -3,7 +3,7 @@ const { getUserRepositories } = require('./getUserRepositories');
 const { getUserData } = require('./getUserData');
 const { pluralizer } = require('./pluralizer');
 const { demoStyles } = require('./demoStyles');
-const { allDemoStyles } = require('./allDemoStyles');
+const { fedDemoStyles } = require('./fedDemoStyles');
 
 module.exports = {
   getUserRepositories,
@@ -11,5 +11,5 @@ module.exports = {
   getUserData,
   pluralizer,
   demoStyles,
-  allDemoStyles
+  fedDemoStyles
 }

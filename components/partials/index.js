@@ -1,11 +1,11 @@
 const { Header } = require('./Header');
 const { Footer } = require('./Footer');
 const { Content } = require('./Content');
-const { ErrorMessage } = require('./ErrorMessage');
+const { ErrorCard } = require('./ErrorCard');
 
 module.exports = {
   Header,
   Footer,
   Content,
-  ErrorMessage
+  ErrorCard
 }
